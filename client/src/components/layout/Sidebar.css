@@ -1,0 +1,82 @@
+.sidebar {
+  width: var(--sidebar-width);
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-icon {
+  width: 36px; height: 36px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px; color: #fff;
+  flex-shrink: 0;
+}
+
+.brand-name { font-weight: 700; font-size: 14px; }
+.brand-sub { font-size: 10px; color: var(--text-muted); }
+
+.sidebar-nav { flex: 1; padding: 12px 8px; overflow-y: auto; }
+
+.nav-section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  padding: 6px 10px 4px;
+  font-weight: 600;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all var(--transition);
+  margin-bottom: 1px;
+  text-decoration: none;
+}
+.nav-item:hover { background: var(--bg-hover); color: var(--text-primary); }
+.nav-item.active { background: var(--accent-light); color: var(--accent); border: 1px solid rgba(79,110,247,0.2); }
+
+.nav-icon { font-size: 14px; width: 18px; text-align: center; }
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.user-info { flex: 1; display: flex; align-items: center; gap: 8px; min-width: 0; }
+.user-avatar {
+  width: 30px; height: 30px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px; color: #fff;
+  flex-shrink: 0;
+}
+.user-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.user-role { font-size: 10px; color: var(--text-muted); text-transform: capitalize; }
+.logout-btn { background: transparent; color: var(--text-muted); font-size: 16px; padding: 4px; border-radius: 4px; }
+.logout-btn:hover { color: var(--danger); background: var(--danger-bg); }
