@@ -169,14 +169,29 @@ Every scored transaction stores the list of signals that fired and the points ea
 
 ## Screenshots
 
-> *Screenshots would be added here for a production README. Run the app locally to see the full UI.*
+**Login** — demo credential tiles
 
-- Login Page with demo credential tiles
-- Transaction Monitoring with risk score bars and badges
-- Transaction Detail with AI explanation panel
-- Fraud Case lifecycle management
-- Analytics dashboard with 6 Recharts visualizations
-- Audit Logs table (admin only)
+![Login page](docs/screenshots/Login.png)
+
+**Transaction Monitoring** — risk score bars and badges
+
+![Transaction monitoring table](docs/screenshots/Transactions.png)
+
+**Transaction Detail** — AI explanation and the per-signal score breakdown
+
+![Transaction detail with risk breakdown](docs/screenshots/Details.png)
+
+**Fraud Case** — status, assignment, notes and summary
+
+![Fraud case detail](docs/screenshots/Case.png)
+
+**Risk Analytics** — six interactive charts
+
+![Risk analytics dashboard](docs/screenshots/Risk Analytics.png)
+
+**Audit Logs** — admin only
+
+![Audit log table](docs/screenshots/Audit Logs.png)
 
 ---
 
@@ -347,22 +362,6 @@ Tests run against a private in-memory SQLite database with their own signing sec
 - [ ] Two-factor authentication for analyst accounts
 - [ ] Email/SMS alerting for critical-risk transactions
 - [ ] Docker + docker-compose for production deployment
-
----
-
-## Resume Bullet Examples
-
-- **Built a full-stack AI-assisted fraud monitoring platform** using TypeScript, React, Node.js, Express, and SQLite, enabling analysts to review flagged transactions, manage fraud cases, and analyze risk trends across a dashboard with 6 interactive Recharts visualizations.
-
-- **Developed an explainable risk scoring engine** that deterministically evaluated transaction amount anomalies, geographic displacement, merchant category risk, transaction velocity, and customer behavioral baselines to score transactions 0–100 and generate plain-English analyst explanations.
-
-- **Implemented JWT authentication, role-based access control, bcrypt password hashing, protected routes, and a full audit logging system** to simulate the security and compliance controls used in production financial applications.
-
-- **Designed and built a fraud case management system** with full lifecycle support: case creation from flagged transactions, analyst assignment, status transitions, investigation notes, AI-generated case summaries, and resolution tracking.
-
-- **Wrote 25 unit and integration tests using Jest and Supertest**, covering authentication flows, role-based access control, audit-log immutability, risk scoring rule validation, and transaction API filtering.
-
-- **Architected a clean REST API** with controllers, services, middleware, and route separation following enterprise Node.js conventions, with SQL aggregation queries powering all analytics endpoints.
 
 ---
 
