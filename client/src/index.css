@@ -118,7 +118,12 @@ tbody tr:hover { background: var(--bg-hover); }
 
 .factors-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .factor-item { display: flex; align-items: flex-start; gap: 10px; background: var(--bg-secondary); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); font-size: 13px; }
-.factor-icon { color: var(--warning); flex-shrink: 0; margin-top: 1px; }
+.factor-icon { color: var(--warning); flex-shrink: 0; margin-top: 3px; font-size: 10px; }
+.factor-label { font-weight: 600; }
+.factor-description { color: var(--text-secondary); font-size: 12px; margin-top: 2px; }
+.factor-points { flex-shrink: 0; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--warning); }
+.factors-total { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
+.factors-total-score { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
 
 .notes-list { display: flex; flex-direction: column; gap: 10px; }
 .note-item { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; }
