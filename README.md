@@ -187,11 +187,11 @@ Every scored transaction stores the list of signals that fired and the points ea
 
 **Risk Analytics** — six interactive charts
 
-![Risk analytics dashboard](docs/screenshots/Risk Analytics.png)
+![Risk analytics dashboard](docs/screenshots/Analytics.png)
 
 **Audit Logs** — admin only
 
-![Audit log table](docs/screenshots/Audit Logs.png)
+![Audit log table](docs/screenshots/Logs.png)
 
 ---
 
